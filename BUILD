@@ -537,7 +537,7 @@ cc_binary(
         "-DQDECL=",
         "-pthread",
     ],
-    linkopts = ["-pthread"],
+    linkopts = ["-lm", "-pthread"],
     visibility = ["//deepmind/level_generation:__subpackages__"],
     deps = ["@zlib_archive//:zlib"],
 )
